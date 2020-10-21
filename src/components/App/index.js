@@ -1,9 +1,9 @@
 import React from 'react';
-import Message from 'components/Message';
-import Featured from 'components/Featured';
-import TronLinkGuide from 'components/TronLinkGuide';
+import Message from '../Message';
+import Featured from '../Featured';
+import TronLinkGuide from '../TronLinkGuide';
 import TronWeb from 'tronweb';
-import Utils from 'utils';
+import Utils from '../../utils';
 import Swal from 'sweetalert2';
 import banner from 'assets/banner.png';
 
