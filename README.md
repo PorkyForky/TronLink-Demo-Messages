@@ -9,7 +9,10 @@ it if you want to interact with any messages. You can [install TronLink from the
 
 ## Instructions :
 
-1. [install TronLink](https://chrome.google.com/webstore/detail/ibnejdfjmmkpcnlpebklmnkoeoihofec/) chrome extension in browser.
+1. [install TronLink](https://chrome.google.com/webstore/detail/ibnejdfjmmkpcnlpebklmnkoeoihofec/) chrome extension in browser and add some free coins to your wallet from any of the testnet faucets.
+[Nile Testnet Faucet] (https://nileex.io/join/getJoinPage)
+[Shasta Testnet Faucet 1] (https://www.trongrid.io/faucet)
+[Shasta Testnet Faucet 2] (https://testnet.help/en/tronfaucet/testnet)
 
 2. Clone this repo
 ```
