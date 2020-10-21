@@ -317,7 +317,7 @@ class App extends React.Component {
                     onChange={ this.onMessageEdit }></textarea>
                 <div className='footer'>
                     <div className='warning'>
-                        Posting a message will cost 1 TRX and network fees
+                        Posting a message will cost you the network fees
                     </div>
                     <div
                         className={ 'sendButton' + (!!this.state.currentMessage.message.trim().length ? '' : ' disabled') }

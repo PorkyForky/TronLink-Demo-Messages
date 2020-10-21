@@ -139,7 +139,7 @@ h1 {
     }
     
     &::after {
-        content: 'Posting Message';
+        content: 'The message is being confirmed by the network, please wait...';
         position: absolute;
         top: 0;
         left: 0;
