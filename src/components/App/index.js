@@ -5,7 +5,6 @@ import TronLinkGuide from '../TronLinkGuide';
 import TronWeb from 'tronweb';
 import Utils from '../../utils';
 import Swal from 'sweetalert2';
-import banner from 'assets/banner.png';
 
 import './App.scss';
 
