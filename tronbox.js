@@ -10,13 +10,18 @@ module.exports = {
       eventServer: "http://127.0.0.1:8092",
       network_id: "*"
     },
+    nile: {
+      privateKey: '',
+      consume_user_resource_percent: 30,
+      fee_limit: 100000000,
+      fullHost: "https://api.nileex.io",
+      network_id: "*"
+    },
     shasta: {
       privateKey: '',
       consume_user_resource_percent: 30,
       fee_limit: 100000000,
-      fullNode: "https://api.shasta.trongrid.io",
-      solidityNode: "https://api.shasta.trongrid.io",
-      eventServer: "https://api.shasta.trongrid.io",
+      fullHost: "https://api.shasta.trongrid.io",
       network_id: "*"
     },
     mainnet: {
@@ -25,9 +30,7 @@ module.exports = {
       privateKey: process.env.PK,
       consume_user_resource_percent: 30,
       fee_limit: 100000000,
-      fullNode: "https://api.trongrid.io",
-      solidityNode: "https://api.trongrid.io",
-      eventServer: "https://api.trongrid.io",
+      fullHost: "https://api.trongrid.io",
       network_id: "*"
     }
   }
