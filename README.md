@@ -9,23 +9,36 @@ it if you want to interact with any messages. You can [install TronLink from the
 
 ## Instructions :
 
-Install TronLink chrome extension in browser.
+1. [install TronLink](https://chrome.google.com/webstore/detail/ibnejdfjmmkpcnlpebklmnkoeoihofec/) chrome extension in browser.
 
+2. Clone this repo
+```
+$ git clone https://github.com/PorkyForky/TronLink-Demo-Messages
+$ cd TronLink-Demo-Messages
+```
+
+3. Install TronBox and TronWeb
 ```
 $ npm install -g tronbox
 $ npm install -g tronweb
+```
+
+4. Install all required dependencies
+```
 $ npm install
 ```
 
-Add your Private key to tronbox.js from shasta or nile test network account of TronLink.
+5. Add your Private key to tronbox.js from shasta or nile test network account of TronLink.
 
+6. Compile the smart contract
 ```
 $ tronbox compile --compile-all
 $ tronbox migrate --reset --network nile
 ```
 
-Paste (base58) key of SmartContract (The contracts wallet address) in Line 1 of src/utils/index.js
+7. Paste (base58) key of the SmartContract (The contracts wallet address) in Line 1 of src/utils/index.js
 
+8. Start with yarn
 ```
 $ yarn
 $ yarn start
