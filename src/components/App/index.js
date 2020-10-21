@@ -239,13 +239,15 @@ class App extends React.Component {
         Utils.contract.postMessage(message).send({
             shouldPollResponse: true,
             callValue: 0
-        }).then(res => Swal({
-            title: 'Post Created',
-            type: 'success'
-        })).catch(err => Swal({
-            title: 'Post Failed',
-            type: 'error'
-        })).then(() => {
+        }).then(res => Swal.fire(
+            'Post Created',
+            '',
+            'success'
+        )).catch(err => Swal.fire(
+            'Post Failed',
+            '',
+            'error'
+        )).then(() => {
             this.setState({
                 currentMessage: {
                     loading: false,
@@ -271,7 +273,7 @@ class App extends React.Component {
         if(messages[messageID].owner === Utils.tronWeb.defaultAddress.base58)
             return;
 
-        const { value } = await Swal({
+        const { value } = await Swal.fire({
             title: 'Tip Message',
             text: 'Enter tip amount in TRX',
             confirmButtonText: 'Tip',
@@ -295,10 +297,11 @@ class App extends React.Component {
             }
         });
 
-        value && Swal({
-            title: 'Message Tipped',
-            type: 'success'
-        });
+        value && Swal.fire(
+            'Message Tipped',
+            '',
+            'success'
+        );
     }
 
     renderMessageInput() {
